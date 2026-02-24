@@ -1,0 +1,51 @@
+"""Redis client for caching and session storage."""
+
+import redis.asyncio as redis
+from app.core.config import get_settings
+
+settings = get_settings()
+
+
+class RedisClient:
+    """Async Redis client wrapper."""
+
+    def __init__(self):
+        self.client: redis.Redis | None = None
+
+    async def connect(self):
+        self.client = redis.from_url(
+            settings.REDIS_URL,
+            encoding="utf-8",
+            decode_responses=True,
+        )
+
+    async def disconnect(self):
+        if self.client:
+            await self.client.close()
+            self.client = None
+
+    async def ping(self) -> bool:
+        if not self.client:
+            return False
+        try:
+            return await self.client.ping()
+        except Exception:
+            return False
+
+    async def get(self, key: str) -> str | None:
+        if not self.client:
+            return None
+        return await self.client.get(key)
+
+    async def set(self, key: str, value: str, ex: int | None = None):
+        if not self.client:
+            return
+        await self.client.set(key, value, ex=ex)
+
+    async def delete(self, key: str):
+        if not self.client:
+            return
+        await self.client.delete(key)
+
+
+redis_client = RedisClient()

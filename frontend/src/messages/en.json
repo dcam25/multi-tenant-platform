@@ -1,0 +1,13 @@
+{
+  "Settings": {
+    "title": "Settings",
+    "open": "Open settings",
+    "theme": "Theme",
+    "direction": "Direction",
+    "background": "Background color"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong"
+  }
+}
