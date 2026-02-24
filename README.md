@@ -48,6 +48,26 @@ multi-tenant/
 
 ## Getting Started
 
+### Run both frontend and backend concurrently
+
+From the project root:
+
+```bash
+npm install
+npm run dev
+```
+
+This starts the frontend (http://localhost:3000) and backend (http://localhost:8000) together.
+
+**Windows:** If `npm run dev` fails for the backend, run them separately in two terminals:
+```bash
+# Terminal 1 - Backend
+cd backend && venv\Scripts\activate && uvicorn app.main:app --reload --port 8000
+
+# Terminal 2 - Frontend
+cd frontend && npm run dev
+```
+
 ### Prerequisites
 - Node.js 20+
 - Python 3.11+
