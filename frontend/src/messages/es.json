@@ -1,0 +1,84 @@
+{
+  "Nav": {
+    "home": "Inicio",
+    "dashboard": "Panel",
+    "profile": "Perfil",
+    "settings": "Configuración",
+    "signOut": "Cerrar sesión",
+    "signIn": "Iniciar sesión"
+  },
+  "Theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "Footer": {
+    "copyright": "© {year} Plataforma Multi-Inquilino. Todos los derechos reservados.",
+    "home": "Inicio",
+    "dashboard": "Panel"
+  },
+  "Breadcrumb": {
+    "overview": "Resumen",
+    "users": "Usuarios",
+    "tenants": "Inquilinos",
+    "analytics": "Análisis",
+    "settings": "Configuración"
+  },
+  "Tenant": {
+    "selectTenant": "Seleccionar inquilino",
+    "createOrganization": "+ Crear organización"
+  },
+  "Locale": {
+    "en": "English",
+    "ar": "العربية",
+    "es": "Español",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "Sidebar": {
+    "overview": "Resumen",
+    "users": "Usuarios",
+    "tenants": "Inquilinos",
+    "analytics": "Análisis",
+    "settings": "Configuración"
+  },
+  "Dashboard": {
+    "overviewTitle": "Resumen",
+    "overviewDescription": "Tu organización de un vistazo",
+    "usersTitle": "Usuarios",
+    "usersDescription": "Gestionar usuarios en tu organización",
+    "tenantsTitle": "Inquilinos",
+    "tenantsDescription": "Gestionar inquilinos (solo Admin)",
+    "analyticsTitle": "Análisis",
+    "analyticsDescription": "Ver análisis e informes",
+    "settingsTitle": "Configuración",
+    "settingsDescription": "Configuración de la organización"
+  },
+  "Settings": {
+    "title": "Configuración",
+    "open": "Abrir configuración",
+    "theme": "Tema",
+    "direction": "Dirección",
+    "background": "Color de fondo",
+    "sidebarBackground": "Fondo de la barra lateral"
+  },
+  "Common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "user": "Usuario"
+  },
+  "Home": {
+    "welcomeTitle": "Panel",
+    "welcomeDescription": "Bienvenido a la plataforma multi-inquilino.",
+    "guestTitle": "Plataforma Multi-Inquilino",
+    "guestDescription": "Inicia sesión para acceder al panel.",
+    "signIn": "Iniciar sesión",
+    "dashboard": "Panel"
+  },
+  "Notification": {
+    "title": "Notificaciones",
+    "markAllRead": "Marcar todo como leído",
+    "clear": "Borrar",
+    "empty": "Sin notificaciones"
+  }
+}

@@ -1,11 +1,15 @@
 "use client";
 
-import { useUser } from "@clerk/nextjs";
 import { useNotifications } from "@/hooks/use-notifications";
 
-export function NotificationProvider({ children }: { children: React.ReactNode }) {
-  const { user } = useUser();
-  useNotifications(user?.id);
+export function NotificationProvider({
+  children,
+  userId,
+}: {
+  children: React.ReactNode;
+  userId?: string;
+}) {
+  useNotifications(userId);
 
   return <>{children}</>;
 }

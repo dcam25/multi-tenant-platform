@@ -1,10 +1,14 @@
 """
 Authentication endpoints
-Integrates with Clerk - validates JWT from frontend
+Integrates with Logto - validates JWT from frontend
 """
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from typing import Annotated
+
+from fastapi import APIRouter, Depends
 from pydantic import BaseModel
+
+from app.core.auth import AuthInfo, get_current_user
 
 router = APIRouter()
 
@@ -21,11 +25,10 @@ class TokenValidation(BaseModel):
     "/validate",
     response_model=TokenValidation,
     summary="Validate JWT token",
-    description="Validates Clerk JWT and returns user info. Used for backend session verification.",
+    description="Validates Logto JWT and returns user info. Used for backend session verification.",
 )
-async def validate_token():
-    """
-    In production, verify Clerk JWT using the Bearer token from Authorization header.
-    Clerk provides JWKS endpoint for verification.
-    """
-    return TokenValidation(valid=True, user_id=None, role=None)
+async def validate_token(
+    auth: Annotated[AuthInfo, Depends(get_current_user)],
+):
+    """Verify Logto JWT from Authorization header."""
+    return TokenValidation(valid=True, user_id=auth.sub, role=None)

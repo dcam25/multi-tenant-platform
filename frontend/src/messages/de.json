@@ -1,0 +1,84 @@
+{
+  "Nav": {
+    "home": "Startseite",
+    "dashboard": "Dashboard",
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "signOut": "Abmelden",
+    "signIn": "Anmelden"
+  },
+  "Theme": {
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "Footer": {
+    "copyright": "© {year} Multi-Tenant-Plattform. Alle Rechte vorbehalten.",
+    "home": "Startseite",
+    "dashboard": "Dashboard"
+  },
+  "Breadcrumb": {
+    "overview": "Übersicht",
+    "users": "Benutzer",
+    "tenants": "Mandanten",
+    "analytics": "Analysen",
+    "settings": "Einstellungen"
+  },
+  "Tenant": {
+    "selectTenant": "Mandant auswählen",
+    "createOrganization": "+ Organisation erstellen"
+  },
+  "Locale": {
+    "en": "English",
+    "ar": "العربية",
+    "es": "Español",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "Sidebar": {
+    "overview": "Übersicht",
+    "users": "Benutzer",
+    "tenants": "Mandanten",
+    "analytics": "Analysen",
+    "settings": "Einstellungen"
+  },
+  "Dashboard": {
+    "overviewTitle": "Übersicht",
+    "overviewDescription": "Ihre Organisation auf einen Blick",
+    "usersTitle": "Benutzer",
+    "usersDescription": "Benutzer in Ihrer Organisation verwalten",
+    "tenantsTitle": "Mandanten",
+    "tenantsDescription": "Mandanten verwalten (nur Admin)",
+    "analyticsTitle": "Analysen",
+    "analyticsDescription": "Analysen und Berichte anzeigen",
+    "settingsTitle": "Einstellungen",
+    "settingsDescription": "Organisationseinstellungen"
+  },
+  "Settings": {
+    "title": "Einstellungen",
+    "open": "Einstellungen öffnen",
+    "theme": "Design",
+    "direction": "Ausrichtung",
+    "background": "Hintergrundfarbe",
+    "sidebarBackground": "Seitenleisten-Hintergrund"
+  },
+  "Common": {
+    "loading": "Laden...",
+    "error": "Etwas ist schiefgelaufen",
+    "user": "Benutzer"
+  },
+  "Home": {
+    "welcomeTitle": "Dashboard",
+    "welcomeDescription": "Willkommen bei der Multi-Tenant-Plattform.",
+    "guestTitle": "Multi-Tenant-Plattform",
+    "guestDescription": "Melden Sie sich an, um auf das Dashboard zuzugreifen.",
+    "signIn": "Anmelden",
+    "dashboard": "Dashboard"
+  },
+  "Notification": {
+    "title": "Benachrichtigungen",
+    "markAllRead": "Alle als gelesen markieren",
+    "clear": "Löschen",
+    "empty": "Keine Benachrichtigungen"
+  }
+}

@@ -1,13 +1,96 @@
 {
+  "Nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "signOut": "Sign out",
+    "signIn": "Sign in"
+  },
+  "Theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "Footer": {
+    "copyright": "© {year} Multi-Tenant Platform. All rights reserved.",
+    "home": "Home",
+    "dashboard": "Dashboard"
+  },
+  "Breadcrumb": {
+    "overview": "Overview",
+    "users": "Users",
+    "tenants": "Tenants",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "Tenant": {
+    "selectTenant": "Select tenant",
+    "createOrganization": "+ Create organization"
+  },
+  "Locale": {
+    "en": "English",
+    "ar": "العربية",
+    "es": "Español",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "Sidebar": {
+    "overview": "Overview",
+    "users": "Users",
+    "tenants": "Tenants",
+    "analytics": "Analytics",
+    "settings": "Settings"
+  },
+  "Dashboard": {
+    "overviewTitle": "Overview",
+    "overviewDescription": "Your organization at a glance",
+    "usersTitle": "Users",
+    "usersDescription": "Manage users in your organization",
+    "tenantsTitle": "Tenants",
+    "tenantsDescription": "Manage tenants (Admin only)",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "View analytics and reports",
+    "settingsTitle": "Settings",
+    "settingsDescription": "Organization settings"
+  },
   "Settings": {
     "title": "Settings",
     "open": "Open settings",
     "theme": "Theme",
     "direction": "Direction",
-    "background": "Background color"
+    "background": "Background color",
+    "sidebarBackground": "Sidebar background"
   },
   "Common": {
     "loading": "Loading...",
-    "error": "Something went wrong"
+    "error": "Something went wrong",
+    "user": "User"
+  },
+  "Home": {
+    "welcomeTitle": "Dashboard",
+    "welcomeDescription": "Welcome to the multi-tenant platform.",
+    "guestTitle": "Multi-Tenant Platform",
+    "guestDescription": "Sign in to access the dashboard.",
+    "signIn": "Sign In",
+    "dashboard": "Dashboard"
+  },
+  "Notification": {
+    "title": "Notifications",
+    "markAllRead": "Mark all read",
+    "clear": "Clear",
+    "empty": "No notifications"
+  },
+  "Onboarding": {
+    "title": "Create organization",
+    "description": "Set up your workspace to get started.",
+    "orgName": "Organization name",
+    "slug": "Slug (URL-friendly)",
+    "plan": "Plan",
+    "free": "Free",
+    "pro": "Pro",
+    "enterprise": "Enterprise",
+    "create": "Create organization",
+    "creating": "Creating..."
   }
 }

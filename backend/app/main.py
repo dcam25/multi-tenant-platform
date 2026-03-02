@@ -9,13 +9,17 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
+from app.core.logging_config import setup_logging
 from app.core.redis import redis_client
 from app.api.v1.router import api_router
+from app.middleware.tenant_middleware import TenantContextMiddleware
+from app.websocket import sio, socketio_app
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Startup and shutdown events."""
+    setup_logging()
     await redis_client.connect()
     yield
     await redis_client.disconnect()
@@ -42,6 +46,7 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.add_middleware(TenantContextMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
@@ -51,6 +56,8 @@ app.add_middleware(
 )
 
 app.include_router(api_router, prefix="/api/v1")
+
+app.mount("/socket.io", socketio_app)
 
 
 @app.get("/health")

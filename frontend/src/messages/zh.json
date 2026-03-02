@@ -1,0 +1,84 @@
+{
+  "Nav": {
+    "home": "首页",
+    "dashboard": "仪表盘",
+    "profile": "个人资料",
+    "settings": "设置",
+    "signOut": "退出登录",
+    "signIn": "登录"
+  },
+  "Theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
+  },
+  "Footer": {
+    "copyright": "© {year} 多租户平台。保留所有权利。",
+    "home": "首页",
+    "dashboard": "仪表盘"
+  },
+  "Breadcrumb": {
+    "overview": "概览",
+    "users": "用户",
+    "tenants": "租户",
+    "analytics": "分析",
+    "settings": "设置"
+  },
+  "Tenant": {
+    "selectTenant": "选择租户",
+    "createOrganization": "+ 创建组织"
+  },
+  "Locale": {
+    "en": "English",
+    "ar": "العربية",
+    "es": "Español",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "Sidebar": {
+    "overview": "概览",
+    "users": "用户",
+    "tenants": "租户",
+    "analytics": "分析",
+    "settings": "设置"
+  },
+  "Dashboard": {
+    "overviewTitle": "概览",
+    "overviewDescription": "一览您的组织",
+    "usersTitle": "用户",
+    "usersDescription": "管理组织中的用户",
+    "tenantsTitle": "租户",
+    "tenantsDescription": "管理租户（仅管理员）",
+    "analyticsTitle": "分析",
+    "analyticsDescription": "查看分析和报告",
+    "settingsTitle": "设置",
+    "settingsDescription": "组织设置"
+  },
+  "Settings": {
+    "title": "设置",
+    "open": "打开设置",
+    "theme": "主题",
+    "direction": "方向",
+    "background": "背景颜色",
+    "sidebarBackground": "侧边栏背景"
+  },
+  "Common": {
+    "loading": "加载中...",
+    "error": "出了点问题",
+    "user": "用户"
+  },
+  "Home": {
+    "welcomeTitle": "仪表盘",
+    "welcomeDescription": "欢迎使用多租户平台。",
+    "guestTitle": "多租户平台",
+    "guestDescription": "登录以访问仪表盘。",
+    "signIn": "登录",
+    "dashboard": "仪表盘"
+  },
+  "Notification": {
+    "title": "通知",
+    "markAllRead": "全部标为已读",
+    "clear": "清除",
+    "empty": "暂无通知"
+  }
+}

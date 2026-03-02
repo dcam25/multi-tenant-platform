@@ -1,9 +1,7 @@
 """Redis client for caching and session storage."""
 
 import redis.asyncio as redis
-from app.core.config import get_settings
-
-settings = get_settings()
+from app.core.config import settings
 
 
 class RedisClient:

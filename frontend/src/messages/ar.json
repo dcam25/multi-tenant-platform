@@ -1,13 +1,84 @@
 {
+  "Nav": {
+    "home": "الرئيسية",
+    "dashboard": "لوحة التحكم",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "signOut": "تسجيل الخروج",
+    "signIn": "تسجيل الدخول"
+  },
+  "Theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام"
+  },
+  "Footer": {
+    "copyright": "© {year} منصة متعددة المستأجرين. جميع الحقوق محفوظة.",
+    "home": "الرئيسية",
+    "dashboard": "لوحة التحكم"
+  },
+  "Breadcrumb": {
+    "overview": "نظرة عامة",
+    "users": "المستخدمون",
+    "tenants": "المستأجرون",
+    "analytics": "التحليلات",
+    "settings": "الإعدادات"
+  },
+  "Tenant": {
+    "selectTenant": "اختر المستأجر",
+    "createOrganization": "+ إنشاء منظمة"
+  },
+  "Locale": {
+    "en": "English",
+    "ar": "العربية",
+    "es": "Español",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "Sidebar": {
+    "overview": "نظرة عامة",
+    "users": "المستخدمون",
+    "tenants": "المستأجرون",
+    "analytics": "التحليلات",
+    "settings": "الإعدادات"
+  },
+  "Dashboard": {
+    "overviewTitle": "نظرة عامة",
+    "overviewDescription": "منظمتك في لمحة",
+    "usersTitle": "المستخدمون",
+    "usersDescription": "إدارة المستخدمين في منظمتك",
+    "tenantsTitle": "المستأجرون",
+    "tenantsDescription": "إدارة المستأجرين (للمسؤول فقط)",
+    "analyticsTitle": "التحليلات",
+    "analyticsDescription": "عرض التحليلات والتقارير",
+    "settingsTitle": "الإعدادات",
+    "settingsDescription": "إعدادات المنظمة"
+  },
   "Settings": {
     "title": "الإعدادات",
     "open": "فتح الإعدادات",
     "theme": "المظهر",
     "direction": "الاتجاه",
-    "background": "لون الخلفية"
+    "background": "لون الخلفية",
+    "sidebarBackground": "خلفية الشريط الجانبي"
   },
   "Common": {
     "loading": "جاري التحميل...",
-    "error": "حدث خطأ ما"
+    "error": "حدث خطأ ما",
+    "user": "مستخدم"
+  },
+  "Home": {
+    "welcomeTitle": "لوحة التحكم",
+    "welcomeDescription": "مرحباً بك في منصة متعددة المستأجرين.",
+    "guestTitle": "منصة متعددة المستأجرين",
+    "guestDescription": "سجّل الدخول للوصول إلى لوحة التحكم.",
+    "signIn": "تسجيل الدخول",
+    "dashboard": "لوحة التحكم"
+  },
+  "Notification": {
+    "title": "الإشعارات",
+    "markAllRead": "تعليم الكل كمقروء",
+    "clear": "مسح",
+    "empty": "لا توجد إشعارات"
   }
 }

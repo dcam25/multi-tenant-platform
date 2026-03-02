@@ -20,12 +20,14 @@ class Settings(BaseSettings):
     # CORS
     CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://127.0.0.1:3000"]
 
-    # Clerk (for JWT verification)
-    CLERK_SECRET_KEY: str = ""
+    # Logto (for JWT verification)
+    LOGTO_ENDPOINT: str = ""
+    LOGTO_APP_ID: str = ""
 
     class Config:
         env_file = ".env"
         case_sensitive = True
+        extra = "ignore"  # Ignore extra env vars (e.g. legacy CLERK_SECRET_KEY)
 
 
 @lru_cache

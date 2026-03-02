@@ -121,6 +121,24 @@ App: http://localhost:3000
 - `member` – Read, update
 - `viewer` – Read only
 
+## Multi-Tenant Architecture
+
+Based on [Relevant Software's multi-tenant best practices](https://relevant.software/blog/multi-tenant-architecture/):
+
+- **Database strategy**: Single multi-tenant database with `tenant_id` columns (pool isolation)
+- **Tenant identification**: `X-Tenant-ID` or `X-Tenant-Slug` header on API requests
+- **Tenant onboarding**: Create organization flow at `/onboarding`
+- **Tenant configuration**: Branding, features, settings per tenant
+- **Tenant switcher**: Navbar dropdown to switch between organizations
+
+### Supabase schema
+
+Run migrations in `supabase/migrations/` to create:
+- `tenants` – organization data
+- `tenant_users` – user–tenant membership + role
+- `tenant_config` – tenant-specific settings
+- `tenant_data` – example tenant-scoped table
+
 ## Features
 - [x] RBAC
 - [x] Clerk auth (GitHub, Google)
